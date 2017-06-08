@@ -1,0 +1,255 @@
+0 - Novo Cliente na Fila (Enfileira)
+1 - Cliente Efetua Compra (Desenfileira)
+2 - Imprime Fila de Clientes
+3 - Imprime Pilha de Recibos
+4 - Imprime Pilha de Recibos Invertidas
+Entrada = 0
+
+Entre com o nome do cliente
+Entrada = Maria
+
+1 - Adicionar Vinil
+2 - Remover Vinil
+3 - Imprimir Lista de Vinils
+4 - Sair
+Entrada = 1
+
+Entre com o nome do cantor
+Entrada = Beatles
+
+Entre com o nome do album
+Entrada = Revolver
+
+Entre com o valor do vinil
+Entrada = 189.15
+
+1 - Adicionar Vinil
+2 - Remover Vinil
+3 - Imprimir Lista de Vinils
+4 - Sair
+Entrada = 1
+
+Entre com o nome do cantor
+Entrada = zzTop
+
+Entre com o nome do album
+Entrada = TresHombres
+
+Entre com o valor do vinil
+Entrada = 187.47
+
+1 - Adicionar Vinil
+2 - Remover Vinil
+3 - Imprimir Lista de Vinils
+4 - Sair
+Entrada = 3
+
+Autor	Album	Preço
+0. Beatles	Revolver	189.45
+1. zzTop	TresHombres	187.47
+
+1 - Adicionar Vinil
+2 - Remover Vinil
+3 - Imprimir Lista de Vinils
+4 - Sair
+Entrada = 1
+
+Entre com o nome do cantor
+Entrada = Mozart
+
+Entre com o nome do album
+Entrada = Symphony
+
+Entre com o valor do vinil
+321.85
+
+1 - Adicionar Vinil
+2 - Remover Vinil
+3 - Imprimir Lista de Vinils
+4 - Sair
+Entrada = 3
+
+Autor	Album	Preço
+0. Beatles	Revolver	189.45
+1. zzTop	TresHombres	187.47
+2. Mozart	Symphony	321.85
+
+1 - Adicionar Vinil
+2 - Remover Vinil
+3 - Imprimir Lista de Vinils
+4 - Sair
+Entrada = 2
+
+Digite a posição que você deseja remover
+Entrada = 1
+
+Removendo album TresHombres do(s) zzTop,  o custo era 187.47
+
+1 - Adicionar Vinil
+2 - Remover Vinil
+3 - Imprimir Lista de Vinils
+4 - Sair
+Entrada = 3
+
+Autor	Album	Preço
+0. Beatles	Revolver	189.45
+1. Mozart	Symphony	201.43
+
+1 - Adicionar Vinil
+2 - Remover Vinil
+3 - Imprimir Lista de Vinils
+4 - Sair
+Entrada = 4
+
+0 - Novo Cliente na Fila (Enfileira)
+1 - Cliente Efetua Compra (Desenfileira)
+2 - Imprime Fila de Clientes
+3 - Imprime Pilha de Recibos
+4 - Imprime Pilha de Recibos Invertidas
+Entrada = 3
+
+A Pilha de Recibos está vazia, ninguém comprou na loja ainda
+
+0 - Novo Cliente Nna Fila (Enfileira)
+1 - Cliente Efetua Compra (Desenfileira)
+2 - Imprime Fila de Clientes
+3 - Imprime Pilha de Recibos
+4 - Imprime Pilha de Recibos Invertidas
+Entrada = 4
+
+A Pilha de Recibos está vazia, ninguém comprou na loja ainda
+
+
+0 - Novo Cliente na Fila (Enfileira)
+1 - Cliente Efetua Compra (Desenfileira)
+2 - Imprime Fila de Clientes
+3 - Imprime Pilha de Recibos
+4 - Imprime Pilha de Recibos Invertidas
+Entrada = 0
+
+Entre com o nome do cliente
+Entrada = José
+
+1 - Adicionar Vinil
+2 - Remover Vinil
+3 - Imprimir Lista de Vinils
+4 - Sair
+Entrada = 1
+
+Entre com o nome do cantor
+Entrada = Nirvana
+
+Entre com o nome do album
+Entrada = Bleach
+
+Entre com o valor do vinil
+Entrada = 135.15
+
+1 - Adicionar Vinil
+2 - Remover Vinil
+3 - Imprimir Lista de Vinils
+4 - Sair
+Entrada = 4
+
+0 - Novo Cliente na Fila (Enfileira)
+1 - Cliente Efetua Compra (Desenfileira)
+2 - Imprime Fila de Clientes
+3 - Imprime Pilha de Recibos
+4 - Imprime Pilha de Recibos Invertidas
+Entrada = 0
+
+Entre com o nome do cliente
+Entrada = Renato
+
+1 - Adicionar Vinil
+2 - Remover Vinil
+3 - Imprimir Lista de Vinils
+4 - Sair
+Entrada = 1
+
+Entre com o nome do cantor
+Entrada = Nirvana
+
+Entre com o nome do album
+Entrada = Nevermind
+
+Entre com o valor do vinil
+Entrada = 186.10
+
+1 - Adicionar Vinil
+2 - Remover Vinil
+3 - Imprimir Lista de Vinils
+4 - Sair
+Entrada = 4
+
+0 - Novo Cliente na Fila (Enfileira)
+1 - Cliente Efetua Compra (Desenfileira)
+2 - Imprime Fila de Clientes
+3 - Imprime Pilha de Recibos
+4 - Imprime Pilha de Recibos Invertidas
+Entrada = 2
+
+Maria
+José
+Renato
+
+0 - Novo Cliente na Fila (Enfileira)
+1 - Cliente Efetua Compra (Desenfileira)
+2 - Imprime Fila de Clientes
+3 - Imprime Pilha de Recibos
+4 - Imprime Pilha de Recibos Invertidas
+Entrada = 1
+
+O valor da compra foi de R$ 511.30
+Maria Efetuou compra
+
+0 - Novo Cliente na Fila (Enfileira)
+1 - Cliente Efetua Compra (Desenfileira)
+2 - Imprime Fila de Clientes
+3 - Imprime Pilha de Recibos
+4 - Imprime Pilha de Recibos Invertidas
+Entrada = 1
+
+O valor da compra foi de R$ 135.15
+José Efetuou compra
+
+0 - Novo Cliente na Fila (Enfileira)
+1 - Cliente Efetua Compra (Desenfileira)
+2 - Imprime Fila de Clientes
+3 - Imprime Pilha de Recibos
+4 - Imprime Pilha de Recibos Invertidas
+Entrada = 1
+
+O valor da compra foi de R$ 186.10
+Renato Efetuou compra
+
+0 - Novo Cliente na Fila (Enfileira)
+1 - Cliente Efetua Compra (Desenfileira)
+2 - Imprime Fila de Clientes
+3 - Imprime Pilha de Recibos
+4 - Imprime Pilha de Recibos Invertidas
+Entrada = 2
+
+Não é possível imprimir, a fila está vazia
+
+0 - Novo Cliente na Fila (Enfileira)
+1 - Cliente Efetua Compra (Desenfileira)
+2 - Imprime Fila de Clientes
+3 - Imprime Pilha de Recibos
+4 - Imprime Pilha de Recibos Invertidas
+Entrada = 3
+
+Cliente: Renato, gastou R$ 186.10
+Cliente: José, gastou R$ 135.15
+Cliente: Maria, gastou R$ 511.30
+
+0 - Novo Cliente na Fila (Enfileira)
+1 - Cliente Efetua Compra (Desenfileira)
+2 - Imprime Fila de Clientes
+3 - Imprime Pilha de Recibos
+4 - Imprime Pilha de Recibos Invertidas
+Entrada = 4
+
+Cliente: Maria, gastou R$ 511.30
+Cliente: José, gastou R$ 135.15
+Cliente: Renato, gastou R$ 186.10

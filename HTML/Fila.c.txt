@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "Estruturas.h"
+
+//Iniciando a fila
+void inicfila (TipoFila *Fila) {
+	Fila->inicio = (EstruturaFila*)malloc(sizeof(EstruturaFila));
+	Fila->fim = Fila->inicio;
+	Fila->inicio->prox = NULL;
+}
+
+//Verifica se a fila está vazia
+int vaziafila (TipoFila Fila) {
+	return (Fila.inicio == Fila.fim);
+}
+
+//Enfileira a fila
+void enfileira (TipoFila *Fila, char *cliente) {
+	Fila->fim->prox = (EstruturaFila*)malloc(sizeof(EstruturaFila));
+	Fila->fim = Fila->fim->prox;
+	strcpy (Fila->fim->cliente,cliente);
+	Fila->fim->prox = NULL;
+}
+
+//Desenfileira  a fila e printa o nome de quem efetou a compra
+void desenfileira (TipoFila *Fila, char *cliente) {
+	EstruturaFila* aux;
+	if (vaziafila (*Fila))
+		fprintf (stderr, "Não é possível, a fila está vazia\n");
+	else {
+		aux = Fila->inicio;
+		Fila->inicio = Fila->inicio->prox;
+		free (aux);
+		strcpy (cliente, Fila->inicio->cliente);
+		printf ("%s Efetuou compra\n", cliente);
+	}
+}
+
+//Imprime a fila
+void imprimefila (TipoFila Fila) {
+	EstruturaFila *aux;
+
+	if (vaziafila (Fila))
+		fprintf (stderr, "Não é possível imprimir, a fila está vazia\n");
+	else {
+		aux = Fila.inicio->prox;
+		while (aux != NULL) {
+			printf ("%s\n",  aux->cliente);
+			aux = aux->prox;
+		}
+	}
+}

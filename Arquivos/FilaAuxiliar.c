@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "Estruturas.h"
+
+//Iniciando a fila auxiliar
+void inicfilaAUX (TipoFilaAux *FilaAux) {
+	FilaAux->inicio = (EstruturaFilaAux*)malloc(sizeof(EstruturaFilaAux));
+	FilaAux->fim = FilaAux->inicio;
+	FilaAux->inicio->prox = NULL;
+}
+
+//Verifica se a fila auxiliar está vazia
+int vaziafilaAUX (TipoFilaAux FilaAux) {
+	return (FilaAux.inicio == FilaAux.fim);
+}
+
+//Enfileira a fila auxiliar, recebe cliente e valor
+void enfileiraAUX (TipoFilaAux *FilaAux, char *cliente, double valor) {
+	FilaAux->fim->prox = (EstruturaFilaAux*)malloc(sizeof(EstruturaFilaAux));
+	FilaAux->fim = FilaAux->fim->prox;
+	strcpy (FilaAux->fim->cliente,cliente);
+	FilaAux->fim->valor = valor;
+	FilaAux->fim->prox = NULL;
+}
+
+//Desenfileira  a fila, os valores de cliente e valor são mudados dentro da propria função
+void desenfileiraAUX (TipoFilaAux *FilaAux, char *cliente, double *valor) {
+	EstruturaFilaAux *aux;
+	
+	aux = FilaAux->inicio;
+	FilaAux->inicio = FilaAux->inicio->prox;
+	free (aux);
+	strcpy (cliente, FilaAux->inicio->cliente);
+	*valor = FilaAux->inicio->valor;
+}
+

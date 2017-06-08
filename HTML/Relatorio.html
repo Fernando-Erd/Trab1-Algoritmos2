@@ -1,0 +1,68 @@
+<html>
+  <head>
+	<title> Relatório Trabalho Prático 1 - Algoritmos II</title>
+	
+  </head>
+	<h1><center>Relatório</h2>
+  <body>
+	<h3>Restrições</h3>
+	<p>O programa entende que as strings (Nome do Cliente, Cantor, Album) não contém espaços quando inseridas.</p>
+	
+	<h3>Implementações</h3>
+	<p>Lista - Alocação Estática</p>
+	<p>Pilha - Alocação Dinâmica</p>
+	<p>Fila - Alocação Dinâmica</p>
+	<p>Fila Auxiliar - Alocação Dinâmica</p>
+
+	<h3>Detalhamento do Arquivo Estruturas.h</h3>
+	<p>O Arquivo que contem todos os Typedefs usados no trabalho.</p>
+	<p><b>EstruturaLista</b> - É um registro que contem os campos cantor, álbum, valor e o numero desejados de vinis que o cliente quer.</p>
+	<p><b>EstruturaFila</b> - É um registro que contem os campos cliente, um apontador (prox) que aponta para a mesma estrututura e outro apontador chamado discos que aponta para a EstruturaLista. </p>
+	<p><b>EstruturaPilha</b> - É um registro que contem os campos cliente, valor (valor total da compra) e um apontador para a EstruturaPilha.
+	<p><b>EstruturaFilaAux</b> - É um registro que contem os mesmos campos que a a EstruturaPilha (cliente e valor) e um apontador para a própria EstruturaFilaAux.</p>
+	<p><b>TipoFila</b> - Dois apontadores para a EstruturaFila (inicio e fim).</p>
+	<p><b>TipoPilha</b> - Um apontador para a EstruturaPilha(topo) e um campo que guarda o tamanho da pilha(numelementos). </p>
+	<p><b>TipoFilaAux</b> - Dois apontadores para a EstruturaFilaAux (inicio e fim).</p> 
+
+	<h3>Detalhamento do Arquivo Fila.c</h3>
+	<p>A Fila foi implementada com alocação dinâmica de memoria, por isso a alocação é em tempo de execução do programa.</p>
+	<p><b>void inicfila</b> - Aqui é iniciada a fila, fazendo sua alocação, fim igual a inicio, e fazendo o ponteiro prox igual a NULL.</p>
+	<p><b>int vaziafila</b> - Função que retorna um inteiro de acordo com o resultado da operação (fila.inicio==fila.final).</p>
+	<p><b>void enfileira</b> - Função que coloca o cliente na fila.</p>
+	<p><b>void desenfileira</b> - Função que retira cliente da fila, ela recebe além da fila, um char cliente que altera o conteúdo dessa variável com o nome do cliente que efetuou a compra, isso por que a variável cliente vai ser usada na função push (empilha).</p>
+	<p><b>void imprimefila</b> - Função que vai imprimir lista de clientes na fila.</p>
+
+	<h3>Detalhamento do Arquivo Lista.c</h3>
+	<p>A lista foi implementada com alocação estática de memória definido como tamanho máximo de vinis desejados como cinco, por motivos de ficar visível os problemas da alocação estática, assim o cliente não pode comprar um número de vinis maior que cinco.</p>
+	<p><b>void iniclista</b> - Função que inicia a Lista com o número de vinis desejados igual a zero.</p>
+	<p><b>void desalocalista</b> - Mesmo sendo estática foi preciso alocar memoria para uma lista, já que quando é feito o malloc na fila, o apontador para a lista é criado, não a lista.</p>
+	<p><b>int vazialista</b> - Função que verifica se a lista está vazia, ela vai estar vazia quando o número de desejos for igual a zero.</p>
+	<p><b>void inserelista</b> - Função que recebe cantor, álbum e valor e coloca na lista do cliente, além de aumentar o numero de vinis desejados.</p>
+	<p><b>void removelista</b> - Função que remove um vinil da lista, o usuário entra com a posição que quer remover, mostra o álbum e o cantor que está sendo removido, além de copiar o ultimo elemento da lista para a posição do vinil removido e por ultimo diminui o número de vinis desejados.</p>
+	<p><b>void valorcompra</b> - Função que recebe uma variável double com o nome de valor que é alterada dentro da própria função e recebe o valor da soma do preço de todos os vinis desejados do cliente que efetuou a compra, a mesma variável vai ser usada na função push (empilha) para adicionar no campo do valor o total gasto pelo cliente.</p>
+	<p><b>void imprimelista</b> - Imprime a lista dos vinis desejados do ultimo cliente adicionado na fila.</p>
+
+	<h3>Detalhamento do Arquivo Pilha.c</h3>
+	<p>A Pilha foi implementada com alocação dinâmica</p>
+	<p><b>void inicpilha</b> - Função que inicia a pilha e faz sua alocação de memória e deixa o campo que guarda o número de elementos da pilha (numelementos) igual a zero.</p>
+	<p><b>int vaziapilha</b> - Função que verifica se a pilha está vazia.</p>
+	<p><b>void push (empilha)</b> - Função que recebe o cliente (modificado na função desempilha) e o valor (modificado na função valorcompra) e empilha, além de aumentar o número de elementos, a função também é usada no invertepilha.</p>
+	<p><b>void pop (desempilha)</b> - Função que recebe variáveis cliente e valor que são alterados dentro da função para que possam ser usadas na função EnfileiraAux (as duas são chamadas na função invertepilha).</p>
+	<p><b>void imprimepilha</b> - Função que imprime a pilha.</p>
+	<p><b>void invertepilha</b> - Função que inverte a pilha de recibos, enquanto a pilha não estiver vazia ela vai enfileirando, depois enquanto a fila auxiliar não estiver vazia ela vai empilhando na mesma pilha, assim invertendo os elementos.</p>
+
+	<h3>Detalhamento do Arquivo FilaAuxiliar.c</h3>
+	<p>A fila auxiliar foi usada como opção para ajudar a inverter a pilha , ela também é alocada dinamicamente.</p>
+	<p><b>void inicfilaAUX</b> - Função que aloca a memória e inicia a fila auxiliar.</p>
+	<p><b>void vaziafilaAUX</b> - Função que verifica se a fila auxiliar está vazia.</p>
+	<p><b>void enfileiraAUX</b> - Função que recebe o cliente e o valor e enfileira.</p>
+	<p><b>void desenfileiraAUX</b> - Função que recebe cliente e o valor e muda as variáveis dentro da função, essas variáveis são usadas na função push (empilha) na hora de inversão da pilha.</p>
+
+
+	<h3>Detalhamento do Arquivo Main.c</h3>
+	<p>Programa principal do trabalho.</p>
+	<p>Temos nele duas funções que imprime instruções, uma sendo o menu principal com a os operações: Novo Cliente na Fila, Cliente Compra, Imprime Fila, Imprime Pilha e Imprime Pilha Invertida. E um submenu com opções da lista com as seguintes operações: Adicionar Vinil, Remover Vinil, Imprimir Lista e Sair (o cliente atual não pode realizar mais nenhuma operação a respeito da lista).</p>
+	<p>Então temos um switch para o menu principal e um outro switch com as operações da lista.</p>
+  </body>
+</html>
+	
